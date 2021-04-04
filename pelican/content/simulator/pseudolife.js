@@ -15,7 +15,8 @@
 
 (function () {
 
-  var realBackgroundColor = "#272b30";
+  //var realBackgroundColor = "#272b30";
+  var realBackgroundColor = "#060606";
   var gridStrokeColor1    = "#3a3a3a";
   var mapZoneStrokeColor  = "#dddddd";
   var grays = ["#3a3a3a", "#404040"];

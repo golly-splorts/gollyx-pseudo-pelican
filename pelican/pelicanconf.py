@@ -19,7 +19,7 @@ else:
     SITENAME = u'GollyX'
 
 PATH = 'content'
-THEME = 'golly-pelican-theme'
+THEME = 'gollyx-pelican-theme'
 
 # Don't try to turn HTML files into pages
 READERS = {'html': None}
