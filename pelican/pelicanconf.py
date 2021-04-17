@@ -1,7 +1,7 @@
 import os, re, glob
 
 
-GOLLYX_PELICAN_VERSION = "18.0.0.dev0"
+GOLLYX_PELICAN_VERSION = "20.0.0.dev0"
 
 
 # Yes, this is supposed to be UI not URI...
@@ -19,7 +19,7 @@ else:
     SITENAME = u'GollyX'
 
 PATH = 'content'
-THEME = 'gollyx-pelican-theme'
+THEME = 'gollyx-pseudo-pelican-theme'
 
 # Don't try to turn HTML files into pages
 READERS = {'html': None}
@@ -71,8 +71,9 @@ TEMPLATE_PAGES['simulator/pseudolife.js']   = 'simulator/pseudolife.js'
 # These two env vars are used via Jinja in golly-pelican-theme (header.html) to set API/UI base URLs.
 # If they are empty strings, we use Javscript to deduce the base UI URL,
 # and insert "api." beteen the protocol and base URL to get the API URL.
-GOLLY_BASE_UI = os.environ.get('GOLLYX_BASE_UI', '')
-GOLLY_BASE_API = os.environ.get('GOLLYX_BASE_API', '')
+GOLLYX_BASE_UI = os.environ.get('GOLLYX_BASE_UI', '')
+GOLLYX_BASE_API = os.environ.get('GOLLYX_BASE_API', '')
+GOLLYX_MAPS_API = os.environ.get('GOLLYX_BASE_API', '')
 
 
 # --------------------
