@@ -1,7 +1,7 @@
 import os, re, glob
 
 
-GOLLYX_PELICAN_VERSION = "20.0.0.dev0"
+GOLLYX_HELLMOUTH_PELICAN_VERSION = "20.0.0.dev0"
 
 
 # Yes, this is supposed to be UI not URI...
@@ -73,7 +73,7 @@ TEMPLATE_PAGES['simulator/pseudolife.js']   = 'simulator/pseudolife.js'
 # and insert "api." beteen the protocol and base URL to get the API URL.
 GOLLYX_BASE_UI = os.environ.get('GOLLYX_BASE_UI', '')
 GOLLYX_BASE_API = os.environ.get('GOLLYX_BASE_API', '')
-GOLLYX_MAPS_API = os.environ.get('GOLLYX_BASE_API', '')
+GOLLYX_MAPS_API = os.environ.get('GOLLYX_MAPS_API', '')
 
 
 # --------------------
