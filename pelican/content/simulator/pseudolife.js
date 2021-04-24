@@ -332,7 +332,7 @@
           // If the game is season 0-2,
           // use legacy neighbor color rules (to preserve outcome)
           // otherwise, use updated neighbor color rules
-          this.neighborColorLegacyMode = (this.gameApiResult.season < 3);
+          this.neighborColorLegacyMode = false;
 
           // Map initial conditions
           this.initialState1 = this.gameApiResult.initialConditions1;
