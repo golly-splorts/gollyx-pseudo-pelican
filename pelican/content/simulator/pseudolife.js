@@ -304,7 +304,7 @@
           var gameTitleElem = document.getElementById('golly-game-title');
           if (gameApiResult.isPostseason == true) {
             var sp1 = gameApiResult.season + 1;
-            gameTitleElem.innerHTML = "Pseudo Cup: " + gameApiResult.description + " <small>- S" + sp1 + "</small>";
+            gameTitleElem.innerHTML = gameApiResult.description + " <small>- S" + sp1 + "</small>";
           } else {
             var sp1 = gameApiResult.season + 1;
             var dp1 = gameApiResult.day + 1;
