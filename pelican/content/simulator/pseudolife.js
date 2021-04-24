@@ -36,7 +36,6 @@
     gameMode : false,
     mapMode : false,
     sandboxMode : false,
-    neighborColorLegacyMode : false,
 
     teamNames: [],
     teamColors: [],
@@ -328,11 +327,6 @@
           this.setTeamNames();
           this.setColors();
           this.drawIcons();
-
-          // If the game is season 0-2,
-          // use legacy neighbor color rules (to preserve outcome)
-          // otherwise, use updated neighbor color rules
-          this.neighborColorLegacyMode = false;
 
           // Map initial conditions
           this.initialState1 = this.gameApiResult.initialConditions1;
@@ -1988,9 +1982,7 @@
         } else if (color2 > color1) {
           return 2;
         } else {
-          if (GOL.gameMode && GOL.neighborColorLegacyMode) {
-            return 1;
-          } else if (x%2==y%2) {
+          if (x%2==y%2) {
             return 1;
           } else {
             return 2;
@@ -2188,9 +2180,7 @@
         } else if (neighbors2 > neighbors1) {
           color = 2;
         } else {
-          if (GOL.neighborColorLegacyMode) {
-            color = 1;
-          } else if (x%2==y%2) {
+          if (x%2==y%2) {
             color = 1;
           } else {
             color = 2;
