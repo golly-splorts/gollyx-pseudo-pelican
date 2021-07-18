@@ -1,3 +1,8 @@
+Version 33.0:
+
+* Fix map labels
+* Fix bug with South Perimeter map and how tiebreakers work when an alive cell is specified as both state 1 and state 2
+
 Version 21.0
 
 * first release of pseudo cup pelican
