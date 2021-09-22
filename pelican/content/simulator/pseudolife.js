@@ -332,7 +332,9 @@
           this.initialState2 = this.gameApiResult.initialConditions2;
           this.columns = this.gameApiResult.columns;
           this.rows = this.gameApiResult.rows;
-          this.cellSize = this.gameApiResult.cellSize;
+          // Override for easier viewing
+          // this.cellSize = this.gameApiResult.cellSize;
+          this.cellSize = 6;
           this.mapName = this.gameApiResult.mapName;
           this.mapZone1Name = this.gameApiResult.mapZone1Name;
           this.mapZone2Name = this.gameApiResult.mapZone2Name;
@@ -388,8 +390,9 @@
           this.initialState2 = mapApiResult.initialConditions2;
           this.columns = mapApiResult.columns;
           this.rows = mapApiResult.rows;
-          this.cellSize = mapApiResult.cellSize;
-
+          // Override for easier viewing
+          // this.cellSize = mapApiResult.cellSize;
+          this.cellSize = 6;
           this.mapName = mapApiResult.mapName;
           this.mapZone1Name = mapApiResult.mapZone1Name;
           this.mapZone2Name = mapApiResult.mapZone2Name;
